@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>tab</title>
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<style>
+body{ margin:0; padding:0;}
+ul,li{ margin:0; padding:0; list-style:none;}
+.box{ width:400px; margin:0 auto;}
+.box ul{ height:40px;}
+.box ul li{ float:left; width:100px; color:#666; text-align:center; line-height:40px;}
+.box ul li.now{ color:#F60; border-bottom:solid 2px #FF6600;}
+
+
+.list{ margin-top:20px}
+.list div{ color:#666;width: 200px;text-align: center;}
+.list div.text{  display:none;}
+</style>
+</head>
+
+
+<body>
+<div class="box" id="box">
+    <ul id="tab">
+        <li>jauery</li>
+        <li>html</li>
+        <li>css</li>
+        <li>ajax</li>
+    </ul>
+    <div class="list" id="list">
+        <div class="text" style="display:block;">jauery</div>
+        <div class="text">html</div>
+        <div class="text">css</div>
+        <div class="text">ajax</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+function change(tab,content){
+var $tab =  $(tab);
+$tab.find("li").eq(0).addClass("now");
+$tab.find("li").on("click",function(){
+var index = $(this).index();
+$(this).addClass("now").siblings().removeClass("now");
+$(content).children("div").eq(index).show().siblings().hide();
+})
+}
+change("#tab","#list");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+header{
+    min-width: 1450px;  
+}
+.header_width{
+    min-width: 1250px;
+}
+.my_bg{
+    background: #114950;
+}
+.my_bg1{
+    background: #eee;
+}
+.my_border{
+    border:2px solid #114950
+}
+.my_position{
+    position: relative;
+}
+.my_absolute{
+    position: absolute;
+    left:25.9rem;
+}
+.my_input{
+    height:2.55rem; 
+}
+.my_after:after{
+    content:"";clear:both;display: block;
+}
+.margin_ml{
+    margin-left:20rem;
+}
+.margin_mr{
+    margin-right:20rem;
+}
+.padding_pl{
+    margin-right:5rem;
+}
+.my_bg2:hover{
+    background: #074047;
+}
+.my_bg2>.active{
+    background: #074047;
+}
+.my_left{
+    margin-left:26rem;
+    background: #fff;
+}
+#navbar{
+    position: relative;
+    z-index: 10;
+}

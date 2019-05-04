@@ -1,0 +1,216 @@
+/* 轮播 */
+.min_width{
+    min-width: 1200px;
+}
+#banner{
+    width:100%;
+    height:480px;
+    position:relative;
+    bottom: 23px;
+   
+   z-index: 1;
+}
+
+.tabs{
+    position:absolute;
+    bottom:10px;
+    left:800px;
+}
+.tabs li{
+    width:20px;
+    height:20px;
+    border:2px solid #fff;
+    float:left;
+    margin-left:5px;
+    border-radius:100%;
+
+}
+.btn{
+    width:30px;
+    height:50px;
+    background-color:rgba(0,0,0,.5);
+    color:#fff;
+    font-size:20px;
+    line-height:32px;
+    position:absolute;
+    top:45%;
+    margin-top:-25px;
+    cursor:pointer;
+    
+}
+.btn:hover{
+    background-color:rgba(0,0,0,.8);
+    color:red;
+}
+.btn1{
+    left:20px;
+}
+.btn2{
+    right:20px;
+}
+.bg{
+    background-color:red;
+}
+/*8张大图*/
+#amin{ min-width: 1000px;}
+#main>div.main_p{
+    min-width:1200px;
+    height:372px;
+    padding-bottom:20px;
+    margin-bottom: 50px;
+}
+.ul_d{
+    width:1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin:0 auto;
+}
+#main>div.main_p ul li{
+    margin-left:20px;
+    margin-bottom: 20px;
+}
+/*热销商品、商城特卖、新品上市*/
+#product{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#product>ul{
+    margin-bottom: 30px;
+    justify-content: space-around;
+    border-bottom:2px solid #f0f0f0 ;
+}
+#product>ul>li{
+    width:400px;
+}
+#product>ul>li.active{
+    border-bottom: 2px solid #104950;
+}
+#product>ul>li.active>a{
+    color:#104950;
+}
+#product>div>ul{
+    justify-content: space-around;
+    padding-left: 20px;
+    width:1200px;
+    display: flex;
+    margin-bottom: 20px;
+    margin:0 auto;
+}
+
+#product div ul li a img{
+    width: 160px;
+    height:160px;
+}
+#product div ul li a:hover{
+    color:red;
+}
+
+/*1F/健康饮品*/
+#product-1{
+    margin:0 auto;
+    width:1200px;
+    height:571px;
+}
+#product-1>div:first-child{
+    width: 1200px;
+    border-bottom: 1px solid #124950;
+}
+
+#product-1>div>span{
+    font-size: 22px;
+    color: rgb(15, 72, 79);
+    font-weight: bold;
+    line-height: 23px;
+}
+#product-1>div>span:first-child{
+    font-size:20px;
+}
+#product-1>div:first-child>ul>li>a.color{
+    color:#333;
+}
+#product-1>div:first-child>ul>li>a.color:hover{
+    color:rgb(15, 72, 79);
+}
+#product-1>div:first-child{
+    width: 1200px;height:41px;
+}
+#product-1>div:first-child>ul{
+    float:right;
+    height: 32px;
+    margin-top:9px;
+    background: #f5f5f5;
+}
+
+#product-1>div:first-child>ul li:first-child{
+    margin-left:0;
+}
+#product-1>div:first-child>ul li{
+    
+    border: 1px solid #e5e5e5;
+    font-weight: normal;
+    height: 30px;
+    padding: 0px 31px;
+    float: left;
+    font-size: 15px;
+    line-height: 30px;
+    border-bottom:1px solid #333;
+}
+#product-1>div:first-child>ul li.active{
+    border: 1px solid #333;
+    border-bottom:none ;
+}
+
+#product-1>div:last-child>a>img{
+    display: block;
+    float: left;
+    width: 240px;
+    height: 530px;
+    overflow: hidden;
+}
+
+#product-1>div:last-child ul li a img{
+    display: block;
+    width: 218px;
+    height: 218px;
+    border: 2px solid transparent;
+    transition: border-color .1s linear;
+}
+#product-1>div:last-child ul{
+    float: left;
+    width: 960px;
+    height: 530px;
+}
+#product-1>div:last-child ul.active{
+    display: block;
+}
+#product-1>div:last-child ul li{
+    width: 222px;
+    margin-left: 18px;
+    overflow: hidden;
+    float: left;
+}
+#product-1>div:last-child ul li p{
+    margin-top:15px;
+    padding-bottom: 15px;
+}
+#product-1>div:last-child ul li p a{
+    float: left;
+    line-height: 13px;
+    color: #3e3e3e;
+    font-size: 13px;
+    font-weight: normal;
+    width: 160px;
+    height: 13px;
+    overflow: hidden;
+}
+#product-1>div:last-child ul li span{
+    display: block;
+    float: right;
+    line-height: 13px;
+    color: #fe4502;
+    padding-left: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
